@@ -1,0 +1,394 @@
+/*Variables*/
+:root{
+    --color: #3a54b4;
+
+}
+
+/*Estilos generalas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    background: rgb(251, 251, 239);
+}
+
+h1{
+    color: var(--color);
+    font-size: 9.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+/*Section Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color);
+    background: rgb(251, 251, 239);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.logo h2{
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--color);
+    padding: 0 12px;
+
+}
+.navbar a:hover{
+    color: rgb(247, 82, 82);
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login i{
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background-color: var(--color);
+    color: beige;
+}
+.login a:hover{
+    color: rgb(116, 116, 225);
+    transition: .3s ease-in-out;
+}
+.login button{
+    background-color: var(--color);
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color: rgb(116, 116, 225);
+}
+
+/*Section Hero*/
+.hero{
+    animation: retraso 1s linear;
+    overflow: hidden;
+    margin: 100px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    color: var(--color);
+}
+.hero .content{
+    width: 500px;
+    height: 500px;
+}
+.content p{
+    margin: 12px 0 12px;
+    font-size: 2.5rem;
+}
+.content button{
+    background-color: var(--color);
+    padding: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.content button:hover{
+    background-color: rgb(116, 116, 225);
+}
+.hero .imagen{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 94, 94);
+    border-radius: 50%;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Section Sobre mi*/
+.sobreMi{
+    animation: retraso 1s linear;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.sobreMi .imagen{
+    width: 400px;
+    height: 400px;
+}
+.sobreMi .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.sobreMi .contenido{
+    width: 400px;
+    height: 400px;
+    color: var(--color);
+}
+.contenido h2{
+    font-size: 4.6rem;
+}
+.contenido p{
+    margin: 38px 0;
+    line-height: 28px;
+}
+.contenido button{
+    background-color: var(--color);
+    color: white;
+    padding: 13px 32px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+.contenido button:hover{
+    background: rgb(116, 116, 225);
+    transition: .3s ease-in-out;
+}
+/*Seccion Servicios*/
+.servicios{
+    animation: retraso 1s linear;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    color: var(--color);
+}
+.servicios div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+.servicios h2{
+    font-size: 4.6rem;
+    display: block;
+}
+.servicios .card{
+    width: 300px;
+    display: grid;
+    place-items: center;
+}
+.card .imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imagen img{
+    width: 100%;
+    height: 100%; 
+}
+.card button{
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--color);
+    color: white;
+    cursor: pointer;
+}
+.servicio1{
+    background-color: orange;
+}
+.servicio2{
+    background-color: skyblue;
+}
+.servicio3{
+    background-color: pink;
+}
+.servicios h3{
+    font-size: 1.6rem;
+}
+.servicios p{
+    margin: 2rem 0;
+}
+
+/*Section Amor al cliente*/
+.amorAlCliente{
+    background-color: #fff;
+    color: var(--color);
+    text-align: center;
+    padding: 2rem 0;
+    animation: retraso 1s linear;
+}
+.amorAlCliente h2{
+    font-size: 4.6rem;
+    padding: 3rem 0;
+}
+.contenedorImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    gap: 17px;
+}
+
+.contenedorImg .imagen{
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.contenedorImg .imagen img{
+    width: 100%;
+    height: 100%;
+}
+.contenedorImg .imagen .rectangulo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color);
+    opacity: 0;
+    transition-duration: 100ms;
+}
+
+.contenedorImg .imagen:hover .rectangulo{
+    opacity: 0.5;
+}
+/*Seccion que opinan los dueños*/
+.queOpinan{
+    height: 100vh;
+    color: var(--color);
+    background-color: #fff;
+    text-align: center;
+    animation: retraso 1s linear;
+}
+.queOpinan h2{
+    font-size: 4.6rem;
+    padding: 4rem 0;
+}
+.queOpinan aside{
+    width: 300px;
+}
+.comentarios{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.comentarios h3{
+    font-size: 1.8rem;
+}
+.comentarios p{
+    margin: 2rem 0;
+    line-height: 28px;
+}
+
+/*Section Contacto*/
+.footer{
+    height: 100vh;
+    background-color: var(--color);
+    color: white;
+}
+.footer h2{
+    font-size: 4.6rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+.footer aside {
+    width: 300px;
+    text-align: center;
+}
+.footer div{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer form{
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer form input{
+    margin:  0 12px;
+    color: white;
+    width: 44%;
+    padding: 12px 32px;
+    background: transparent;
+    outline: none ;
+    border: none ;
+    border-bottom: 1px solid #fff;
+}
+.footer form input:hover{
+    border-bottom: 2px solid white;
+}
+.footer form input::placeholder{
+    color: white;
+}
+.footer form textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 28px 0;
+    outline: none ;
+    color: white;
+}
+.footer form textarea::placeholder{
+    color: white;
+}
+.footer form button{
+    margin: 1rem 0;
+    width: 100%;
+    background: transparent ;
+    padding: 12px;
+    border: none;
+    color: white;
+}
+.footer form button:hover{
+    background: rgba(234, 224, 224, 0.42);
+}
+.footer form .textarea{
+    width: 91%;
+}
+.footer .icons{
+    width: 250px;
+    margin: 4rem auto;
+}
+
+@keyframes retraso {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
